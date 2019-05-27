@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FinalSeguimiento"
+             x:Class="FinalSeguimiento.MainPage">
+
+    <StackLayout Orientation="Vertical" Padding="32" Spacing="10">
+        <!-- Place new controls here -->
+        <Label Text="Principal!" 
+           HorizontalOptions="CenterAndExpand"
+           FontSize="Large" />
+        <Label Text="Tipo de Movimiento: "/>
+        <Entry Placeholder="Introduce el movimiento" x:Name="mov"/>
+        <Label Text="Concepto: "/>
+        <Entry Placeholder="Introduce el concepto del movimiento" x:Name="con"/>
+        <Label Text="Valor: "/>
+        <Entry Placeholder="Introduce el Valor del movimiento" x:Name="val"/>
+        <Label Text="Detalles: "/>
+        <Entry Placeholder="Introduce detalles del movimiento" x:Name="det"/>
+        <Label Text="Fecha: "/>
+        <Entry Placeholder="Introduce la fecha del movimiento" x:Name="fec"/>
+        <Label Text="Recurrente: "/>
+        <Entry Placeholder="Ingresa Si o No" x:Name="rec"/>
+        
+        <Button x:Name="btnAgregar" Text="Agregar nuevo" Clicked="BtnAgregar_Clicked"/>        
+        <Button x:Name="btnConsultar" Text="Consultar Movimientos" Clicked="BtnConsultar_Clicked"/>        
+        <Button x:Name="btnActualizar" Text="Actualizar" Clicked="BtnActualizar_Clicked"/>
+        <Button x:Name="btnEliminarxNombre" Text="Eliminar x Nombre" Clicked="BtnEliminarxNombre_Clicked"/>
+        <Button x:Name="btnEliminar" Text="Eliminar Todos" Clicked="BtnEliminar_Clicked"/>
+
+        <Label x:Name="Estado" FontSize="Large"/>
+        <ListView x:Name="RegistroMov">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Label Text="{Binding MOVIMIENTO}"/>
+                            <Label Grid.Column="1" Text="{Binding CONCEPTO}"/>
+                            <Label Grid.Column="2" Text="{Binding VALOR}"/>
+                            <Label Grid.Column="3" Text="{Binding OBSERVACION}"/>
+                            <Label Grid.Column="4" Text="{Binding FECHA}"/>
+                            <Label Grid.Column="5" Text="{Binding RECURRENCIA}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>
