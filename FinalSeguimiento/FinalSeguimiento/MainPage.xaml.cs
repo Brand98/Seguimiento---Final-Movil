@@ -11,10 +11,24 @@ using SQLite;
 namespace FinalSeguimiento
 {
     public partial class MainPage : ContentPage
-    {      
+    {
+        int cont = 0;
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void BtnAgregar_Clicked(object sender, EventArgs e)
+        {
+            int blanco = ValidarGeneral();
+            if (blanco <= 0)
+            {
+                Estado.Text = string.Empty;
+                Conexion.Instancia.addNew(mov.Text, con.Text, Convert.ToDouble(val.Text), det.Text, Convert.ToDateTime(fec.Text), rec.Text);
+                Estado.Text = Conexion.Instancia.EstadoDeMensaje;
+                DisplayAlert("Alert", Estado.Text, "OK");
+                Clean();
+            }
         }
 
         private void BtnConsultar_Clicked(object sender, EventArgs e)
@@ -27,14 +41,36 @@ namespace FinalSeguimiento
             Estado.Text = Conexion.Instancia.EstadoDeMensaje;
         }
 
-        private void BtnAgregar_Clicked(object sender, EventArgs e)
+        private void BtnCargar_Clicked(object sender, EventArgs e)
         {
-            Estado.Text = string.Empty;
-            Conexion.Instancia.addNew(mov.Text, con.Text, Convert.ToDouble(val.Text), det.Text, Convert.ToDateTime(fec.Text), rec.Text);
-            Estado.Text = Conexion.Instancia.EstadoDeMensaje;
-            DisplayAlert("Alert", Estado.Text, "OK");
-            Clean();             
+            if(string.IsNullOrEmpty(con.Text) || string.IsNullOrWhiteSpace(con.Text))
+            {
+                DisplayAlert("Alert", "Por favor ingrese el concepto", "ERROR");
+            }
+            else
+            {
+                string[] data = new string[10];
+                string info = string.Empty;
+                data = Conexion.Instancia.Cargar(con.Text);
+                for(int i = 0; i < 10; i++)
+                {
+                    info = info + " " + data[i];
+                }
+                mov.Text = data[0];
+                val.Text = data[2];
+                fec.Text = data[3];
+                rec.Text = data[4];
+                det.Text = data[5];
+                DisplayAlert("Mensaje", info, "OK");
+            }            
         }
+
+        private void BtnActualizar_Clicked(object sender, EventArgs e)
+        {
+            Conexion.Instancia.Update(mov.Text, con.Text, Convert.ToDouble(val.Text), det.Text, Convert.ToDateTime(fec.Text), rec.Text);
+            DisplayAlert("Mensaje", "Los valores se actualizaron correctamente", "OK")
+            Clean();
+        }        
 
         private void BtnEliminarxNombre_Clicked(object sender, EventArgs e)
         {
@@ -48,9 +84,38 @@ namespace FinalSeguimiento
             DisplayAlert("Alert", "Los registros se eliminaron con exito", "OK");            
         }
 
-        private void BtnActualizar_Clicked(object sender, EventArgs e)
+        
+
+        public int ValidarGeneral()
         {
-            Conexion.Instancia.Update(mov.Text, con.Text, Convert.ToDouble(val.Text), det.Text, Convert.ToDateTime(fec.Text), rec.Text);
+            int contador = 0;
+            ValidarBlanco(mov);
+            ValidarBlanco(con);
+            ValidarBlanco(val);
+            ValidarBlanco(det);
+            ValidarBlanco(fec);
+            contador = ValidarBlanco(rec);
+            //ValidarNumero();
+            return contador;
+        }
+
+        public int ValidarBlanco(Entry label)
+        {
+            if (String.IsNullOrEmpty(label.Text) || string.IsNullOrWhiteSpace(label.Text))
+            {
+                DisplayAlert("Alert", "Por favor ingrese valores en los campos correspondientes", "OK");
+                cont += 1;
+            }
+            return cont;
+        }
+
+        public void ValidarNumero()
+        {
+            if (!val.Text.ToCharArray().All(char.IsDigit))
+            {
+                DisplayAlert("Alert", "Dentro del campo valor, solo se aceptan números", "OK");
+                val.Text.Equals("");
+            }
         }
 
         public void Clean()

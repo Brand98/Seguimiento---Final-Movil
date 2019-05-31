@@ -105,9 +105,25 @@ namespace FinalSeguimiento.Models
 
                 Console.WriteLine("a " + s.FECHA);
             }
-            con.Table<Registro>().Delete(p => p.CONCEPTO == nombre);
+            //con.Table<Registro>().Delete(p => p.CONCEPTO == nombre);
             //return Conexion.instancia.con.Query<Registro>(query);
             return Enumerable.Empty<Registro>();
+        }
+
+        public string[] Cargar(string nombre)
+        {
+            string[] datos = new string[10];
+            var actualizar = con.Query<Registro>("SELECT * FROM Registro WHERE CONCEPTO = ?", nombre);
+            foreach (var s in actualizar)
+            {
+                datos[0] = s.MOVIMIENTO;
+                datos[1] = s.CONCEPTO;
+                datos[2] = s.VALOR.ToString();
+                datos[3] = s.FECHA.ToString();
+                datos[4] = s.RECURRENCIA;
+                datos[5] = s.OBSERVACION;                
+            }
+            return datos;
         }
     }
 }

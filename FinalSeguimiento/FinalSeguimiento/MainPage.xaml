@@ -21,12 +21,13 @@
         <Entry Placeholder="Introduce la fecha del movimiento" x:Name="fec"/>
         <Label Text="Recurrente: "/>
         <Entry Placeholder="Ingresa Si o No" x:Name="rec"/>
-        
-        <Button x:Name="btnAgregar" Text="Agregar nuevo" Clicked="BtnAgregar_Clicked"/>        
+
+        <Button x:Name="btnCargar" Text="Cargar Datos" Clicked="BtnCargar_Clicked"/>              
         <Button x:Name="btnConsultar" Text="Consultar Movimientos" Clicked="BtnConsultar_Clicked"/>        
         <Button x:Name="btnActualizar" Text="Actualizar" Clicked="BtnActualizar_Clicked"/>
         <Button x:Name="btnEliminarxNombre" Text="Eliminar x Nombre" Clicked="BtnEliminarxNombre_Clicked"/>
         <Button x:Name="btnEliminar" Text="Eliminar Todos" Clicked="BtnEliminar_Clicked"/>
+        <Button x:Name="btnAgregar" Text="Agregar nuevo" Clicked="BtnAgregar_Clicked"/>
 
         <Label x:Name="Estado" FontSize="Large"/>
         <ListView x:Name="RegistroMov">
