@@ -674,11 +674,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
       "projectName": "FinalSeguimiento",
-      "projectPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
+      "projectPath": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
       "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\obj\\",
+      "outputPath": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1179,11 +1179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento.Android\\FinalSeguimiento.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento.Android\\FinalSeguimiento.Android.csproj",
       "projectName": "FinalSeguimiento.Android",
-      "projectPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento.Android\\FinalSeguimiento.Android.csproj",
+      "projectPath": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento.Android\\FinalSeguimiento.Android.csproj",
       "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento.Android\\obj\\",
+      "outputPath": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1200,8 +1200,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj": {
-              "projectPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj"
+            "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj": {
+              "projectPath": "C:\\Users\\jorge\\Desktop\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj"
             }
           }
         }
