@@ -22,3 +22,26 @@ C:\Users\brahy\Desktop\CRUD-SQLite-master\CRUD-SQLite-master\FinalSeguimiento\Fi
 C:\Users\brahy\Desktop\CRUD-SQLite-master\CRUD-SQLite-master\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.dll
 C:\Users\brahy\Desktop\CRUD-SQLite-master\CRUD-SQLite-master\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.pdb
 C:\Users\brahy\Desktop\CRUD-SQLite-master\CRUD-SQLite-master\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.csprojAssemblyReference.cache
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.csproj.CoreCompileInputs.cache
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.AssemblyInfoInputs.cache
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.AssemblyInfo.cs
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.dll
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.pdb
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\bin\Debug\netstandard2.0\FinalSeguimiento.deps.json
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\bin\Debug\netstandard2.0\FinalSeguimiento.dll
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\bin\Debug\netstandard2.0\FinalSeguimiento.pdb
+C:\Users\jorge\Desktop\crud Brahyan\new\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\bin\Debug\netstandard2.0\FinalSeguimiento.deps.json
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\bin\Debug\netstandard2.0\FinalSeguimiento.dll
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\bin\Debug\netstandard2.0\FinalSeguimiento.pdb
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.csprojAssemblyReference.cache
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.csproj.CoreCompileInputs.cache
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.AssemblyInfoInputs.cache
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.AssemblyInfo.cs
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.dll
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\FinalSeguimiento.pdb
+C:\Seguimiento---Final-Movil\FinalSeguimiento\FinalSeguimiento\obj\Debug\netstandard2.0\XamlC.stamp

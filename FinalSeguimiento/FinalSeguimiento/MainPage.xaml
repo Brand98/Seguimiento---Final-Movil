@@ -10,17 +10,17 @@
            HorizontalOptions="CenterAndExpand"
            FontSize="Large" />
         <Label Text="Tipo de Movimiento: "/>
-        <Entry Placeholder="Introduce el movimiento" x:Name="mov"/>
+        <Picker x:Name="mov" SelectedIndexChanged="Mov_SelectedIndexChanged"/>
         <Label Text="Concepto: "/>
-        <Entry Placeholder="Introduce el concepto del movimiento" x:Name="con"/>
+        <Picker x:Name="con"/>
         <Label Text="Valor: "/>
         <Entry Placeholder="Introduce el Valor del movimiento" x:Name="val"/>
         <Label Text="Detalles: "/>
         <Entry Placeholder="Introduce detalles del movimiento" x:Name="det"/>
         <Label Text="Fecha: "/>
-        <Entry Placeholder="Introduce la fecha del movimiento" x:Name="fec"/>
+        <DatePicker x:Name="fec" DateSelected="Fec_DateSelected"/>
         <Label Text="Recurrente: "/>
-        <Entry Placeholder="Ingresa Si o No" x:Name="rec"/>
+        <Picker x:Name="rec"/>
 
         <Button x:Name="btnCargar" Text="Cargar Datos" Clicked="BtnCargar_Clicked"/>              
         <Button x:Name="btnConsultar" Text="Consultar Movimientos" Clicked="BtnConsultar_Clicked"/>        

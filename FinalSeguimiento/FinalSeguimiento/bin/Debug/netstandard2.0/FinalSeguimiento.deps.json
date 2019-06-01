@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "5809d9548869abc5be2bf1cfb8eeed13172dafeb"
+    "signature": "a41bd0e65334b83e999134c5d3f76fc6e977d9c2"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,11 +10,20 @@
       "FinalSeguimiento/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
+          "XLabs.Forms": "2.0.5782",
           "Xamarin.Forms": "3.4.0.1008975",
           "sqlite-net-pcl": "1.5.231"
         },
         "runtime": {
           "FinalSeguimiento.dll": {}
+        }
+      },
+      "ExifLib.PCL/1.0.1": {
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -77,6 +86,57 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "XLabs.Core/2.0.5782": {
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll": {
+            "assemblyVersion": "2.0.5782.12218",
+            "fileVersion": "2.0.5782.12218"
+          }
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "dependencies": {
+          "XLabs.Core": "2.0.5782",
+          "XLabs.IoC": "2.0.5782",
+          "XLabs.Platform": "2.0.5782",
+          "XLabs.Serialization": "2.0.5782",
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll": {
+            "assemblyVersion": "2.0.5782.12218",
+            "fileVersion": "2.0.5782.12218"
+          }
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {
+            "assemblyVersion": "2.0.5782.12218",
+            "fileVersion": "2.0.5782.12218"
+          }
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "2.0.5782"
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll": {
+            "assemblyVersion": "2.0.5782.12218",
+            "fileVersion": "2.0.5782.12218"
+          }
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll": {
+            "assemblyVersion": "2.0.5782.15703",
+            "fileVersion": "2.0.5782.15703"
+          }
+        }
       }
     }
   },
@@ -86,10 +146,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ExifLib.PCL/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lJ7gc1nU7mbHS6tclfDaMbfqKUixYotmqMCcEiva3s478/IXcC7Z+v88OQpGTOYkKfzhP6reibBPmdmogv1m6Q==",
+      "path": "exiflib.pcl/1.0.1",
+      "hashPath": "exiflib.pcl.1.0.1.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "sha512-a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
@@ -103,30 +170,65 @@
     "sqlite-net-pcl/1.5.231": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B9jScvqkishSMkpa9Mc4Q85LTHxRTzcUXZx9EQqgrvdz7MFEDHfpiPcKdjy1qXHdmHttEXfY4h6gu4FlgWP2Sw==",
+      "sha512": "sha512-Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
       "path": "sqlite-net-pcl/1.5.231",
       "hashPath": "sqlite-net-pcl.1.5.231.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
+      "sha512": "sha512-HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
       "path": "sqlitepclraw.bundle_green/1.1.11",
       "hashPath": "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512"
     },
     "SQLitePCLRaw.core/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
+      "sha512": "sha512-bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
       "path": "sqlitepclraw.core/1.1.11",
       "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
     },
     "Xamarin.Forms/3.4.0.1008975": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tM9syeev45u92OFENGjq+Zw8WiEwLJFiXe317XpL9SY2RRk9sm2fc1lDVjzwz0da+5ZP5fi24NAPsPQdxBdMwQ==",
+      "sha512": "sha512-036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "path": "xamarin.forms/3.4.0.1008975",
       "hashPath": "xamarin.forms.3.4.0.1008975.nupkg.sha512"
+    },
+    "XLabs.Core/2.0.5782": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P9UednVxp04toC0NJBb5Y6Wr6K2n3Jg5S3I3rlwfhSjey92VBB/NsZRQS/UmKj+qEJVYeV7kHVU0ORGa41qJaw==",
+      "path": "xlabs.core/2.0.5782",
+      "hashPath": "xlabs.core.2.0.5782.nupkg.sha512"
+    },
+    "XLabs.Forms/2.0.5782": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Uff8iD3stDf7QamEpR2w+1mbW57VdVIhKUPR9WW2S+/QVVUGkHw7WKzCOF6lr0yZVADyMzJSA37cy9HS9aYZkQ==",
+      "path": "xlabs.forms/2.0.5782",
+      "hashPath": "xlabs.forms.2.0.5782.nupkg.sha512"
+    },
+    "XLabs.IoC/2.0.5782": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JQEKWFHQygnRNdvwEqudm1nfpAMFKDC2mwX1Ok8ykNfGaRRHOApK1TzsYaSJw5ptpQZZLLbh8pabtRiP6+tZ4Q==",
+      "path": "xlabs.ioc/2.0.5782",
+      "hashPath": "xlabs.ioc.2.0.5782.nupkg.sha512"
+    },
+    "XLabs.Platform/2.0.5782": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UL5iO/PogYlZsoRdViiu6bBb95qY0s4EotMUR3alfrzCWeQ0eEqZOZObMdOCwcMtkeFvuqgo0o8/lwdC2wcwOg==",
+      "path": "xlabs.platform/2.0.5782",
+      "hashPath": "xlabs.platform.2.0.5782.nupkg.sha512"
+    },
+    "XLabs.Serialization/2.0.5782": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gW7zI5CJhQNmUZYzjHyNlO8fMViuoOM79L/STraVsJ/P4BtaJ9yDYzBIfnSgE8sVIwipEVmyGcTZIKMq0hsrkw==",
+      "path": "xlabs.serialization/2.0.5782",
+      "hashPath": "xlabs.serialization.2.0.5782.nupkg.sha512"
     }
   }
 }

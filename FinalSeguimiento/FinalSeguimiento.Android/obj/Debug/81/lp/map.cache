@@ -1,3 +1,4 @@
+ExifLib
 FinalSeguimiento
 FormsViewGroup
 SQLite-net
@@ -30,5 +31,14 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+XLabs.Core
+XLabs.Forms
+XLabs.Forms.Droid
+XLabs.Ioc
+XLabs.Platform
+XLabs.Platform.Droid
+XLabs.Serialization
 netstandard
 System.Reflection.Extensions
+System.Resources.ResourceManager
+System.ComponentModel

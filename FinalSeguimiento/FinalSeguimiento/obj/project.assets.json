@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "ExifLib.PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -82,12 +91,80 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "XLabs.Core/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll": {}
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.Core": "[2.0.5782]",
+          "XLabs.IoC": "[2.0.5782]",
+          "XLabs.Platform": "[2.0.5782]",
+          "XLabs.Serialization": "[2.0.5782]",
+          "Xamarin.Forms": "1.5.1.6471"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll": {}
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll": {}
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ExifLib.PCL/1.0.1": {
+      "sha512": "lJ7gc1nU7mbHS6tclfDaMbfqKUixYotmqMCcEiva3s478/IXcC7Z+v88OQpGTOYkKfzhP6reibBPmdmogv1m6Q==",
+      "type": "package",
+      "path": "exiflib.pcl/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "exiflib.pcl.1.0.1.nupkg.sha512",
+        "exiflib.pcl.nuspec",
+        "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -230,7 +307,7 @@
       ]
     },
     "sqlite-net-pcl/1.5.231": {
-      "sha512": "B9jScvqkishSMkpa9Mc4Q85LTHxRTzcUXZx9EQqgrvdz7MFEDHfpiPcKdjy1qXHdmHttEXfY4h6gu4FlgWP2Sw==",
+      "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
       "type": "package",
       "path": "sqlite-net-pcl/1.5.231",
       "files": [
@@ -246,7 +323,7 @@
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
-      "sha512": "Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
+      "sha512": "HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
       "type": "package",
       "path": "sqlitepclraw.bundle_green/1.1.11",
       "files": [
@@ -293,7 +370,7 @@
       ]
     },
     "SQLitePCLRaw.core/1.1.11": {
-      "sha512": "QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
+      "sha512": "bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
       "type": "package",
       "path": "sqlitepclraw.core/1.1.11",
       "files": [
@@ -319,7 +396,7 @@
       ]
     },
     "Xamarin.Forms/3.4.0.1008975": {
-      "sha512": "tM9syeev45u92OFENGjq+Zw8WiEwLJFiXe317XpL9SY2RRk9sm2fc1lDVjzwz0da+5ZP5fi24NAPsPQdxBdMwQ==",
+      "sha512": "036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "type": "package",
       "path": "xamarin.forms/3.4.0.1008975",
       "files": [
@@ -463,33 +540,151 @@
         "xamarin.forms.3.4.0.1008975.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "XLabs.Core/2.0.5782": {
+      "sha512": "P9UednVxp04toC0NJBb5Y6Wr6K2n3Jg5S3I3rlwfhSjey92VBB/NsZRQS/UmKj+qEJVYeV7kHVU0ORGa41qJaw==",
+      "type": "package",
+      "path": "xlabs.core/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/XLabs.Core.XML",
+        "lib/Xamarin.iOS10/XLabs.Core.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll",
+        "xlabs.core.2.0.5782.nupkg.sha512",
+        "xlabs.core.nuspec"
+      ]
+    },
+    "XLabs.Forms/2.0.5782": {
+      "sha512": "Uff8iD3stDf7QamEpR2w+1mbW57VdVIhKUPR9WW2S+/QVVUGkHw7WKzCOF6lr0yZVADyMzJSA37cy9HS9aYZkQ==",
+      "type": "package",
+      "path": "xlabs.forms/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Forms.Droid.XML",
+        "lib/MonoAndroid/XLabs.Forms.Droid.dll",
+        "lib/MonoAndroid/XLabs.Forms.XML",
+        "lib/MonoAndroid/XLabs.Forms.dll",
+        "lib/Xamarin.iOS10/XLabs.Forms.XML",
+        "lib/Xamarin.iOS10/XLabs.Forms.dll",
+        "lib/Xamarin.iOS10/XLabs.Forms.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll",
+        "lib/wp8/XLabs.Forms.WP8.XML",
+        "lib/wp8/XLabs.Forms.WP8.dll",
+        "lib/wp8/XLabs.Forms.XML",
+        "lib/wp8/XLabs.Forms.dll",
+        "lib/wpa81/XLabs.Forms.WP8.XML",
+        "lib/wpa81/XLabs.Forms.WP8.dll",
+        "lib/wpa81/XLabs.Forms.XML",
+        "lib/wpa81/XLabs.Forms.dll",
+        "xlabs.forms.2.0.5782.nupkg.sha512",
+        "xlabs.forms.nuspec"
+      ]
+    },
+    "XLabs.IoC/2.0.5782": {
+      "sha512": "JQEKWFHQygnRNdvwEqudm1nfpAMFKDC2mwX1Ok8ykNfGaRRHOApK1TzsYaSJw5ptpQZZLLbh8pabtRiP6+tZ4Q==",
+      "type": "package",
+      "path": "xlabs.ioc/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll",
+        "xlabs.ioc.2.0.5782.nupkg.sha512",
+        "xlabs.ioc.nuspec"
+      ]
+    },
+    "XLabs.Platform/2.0.5782": {
+      "sha512": "UL5iO/PogYlZsoRdViiu6bBb95qY0s4EotMUR3alfrzCWeQ0eEqZOZObMdOCwcMtkeFvuqgo0o8/lwdC2wcwOg==",
+      "type": "package",
+      "path": "xlabs.platform/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Platform.Droid.XML",
+        "lib/MonoAndroid/XLabs.Platform.Droid.dll",
+        "lib/MonoAndroid/XLabs.Platform.XML",
+        "lib/MonoAndroid/XLabs.Platform.dll",
+        "lib/Xamarin.iOS10/XLabs.Platform.XML",
+        "lib/Xamarin.iOS10/XLabs.Platform.dll",
+        "lib/Xamarin.iOS10/XLabs.Platform.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Platform.dll",
+        "lib/wp8/XLabs.Platform.WP8.XML",
+        "lib/wp8/XLabs.Platform.WP8.dll",
+        "lib/wp8/XLabs.Platform.WinRT.winmd",
+        "lib/wp8/XLabs.Platform.XML",
+        "lib/wp8/XLabs.Platform.dll",
+        "lib/wpa81/XLabs.Platform.WP8.XML",
+        "lib/wpa81/XLabs.Platform.WP8.dll",
+        "lib/wpa81/XLabs.Platform.WinRT.winmd",
+        "lib/wpa81/XLabs.Platform.XML",
+        "lib/wpa81/XLabs.Platform.dll",
+        "xlabs.platform.2.0.5782.nupkg.sha512",
+        "xlabs.platform.nuspec"
+      ]
+    },
+    "XLabs.Serialization/2.0.5782": {
+      "sha512": "gW7zI5CJhQNmUZYzjHyNlO8fMViuoOM79L/STraVsJ/P4BtaJ9yDYzBIfnSgE8sVIwipEVmyGcTZIKMq0hsrkw==",
+      "type": "package",
+      "path": "xlabs.serialization/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/XLabs.Serialization.XML",
+        "lib/Xamarin.iOS10/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.lastcodeanalysissucceeded",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.lastcodeanalysissucceeded",
+        "xlabs.serialization.2.0.5782.nupkg.sha512",
+        "xlabs.serialization.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "XLabs.Forms >= 2.0.5782",
       "Xamarin.Forms >= 3.4.0.1008975",
       "sqlite-net-pcl >= 1.5.231"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brahy\\.nuget\\packages\\": {},
+    "C:\\Users\\jorge\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brahy\\Desktop\\CRUD-SQLite-master\\CRUD-SQLite-master\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
+      "projectUniqueName": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
       "projectName": "FinalSeguimiento",
-      "projectPath": "C:\\Users\\brahy\\Desktop\\CRUD-SQLite-master\\CRUD-SQLite-master\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
-      "packagesPath": "C:\\Users\\brahy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brahy\\Desktop\\CRUD-SQLite-master\\CRUD-SQLite-master\\FinalSeguimiento\\FinalSeguimiento\\obj\\",
+      "projectPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\FinalSeguimiento.csproj",
+      "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
+      "outputPath": "C:\\Seguimiento---Final-Movil\\FinalSeguimiento\\FinalSeguimiento\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\brahy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -519,6 +714,10 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "XLabs.Forms": {
+            "target": "Package",
+            "version": "[2.0.5782, )"
+          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.4.0.1008975, )"
@@ -535,5 +734,67 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"ExifLib.PCL 1.0.1\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "ExifLib.PCL",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"XLabs.Core 2.0.5782\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "XLabs.Core",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"XLabs.Forms 2.0.5782\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "XLabs.Forms",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"XLabs.IoC 2.0.5782\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "XLabs.IoC",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"XLabs.Platform 2.0.5782\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "XLabs.Platform",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"XLabs.Serialization 2.0.5782\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "XLabs.Serialization",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
